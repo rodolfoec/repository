@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>HTML</title>
+</head>
+<body>
+	<h1>Hyper Text Markup Language</h1><br><hr>
+	<h2>Elementos</h2>
+		<p>!DOCTYPE html = HTML5<br>
+			&lthtml&gt = raiz<br>
+			&lthead&gt = meta information<br>
+			&lttitle&gt = titulo del documento<br>
+			&ltbody&gt = parte visible del documento<br>
+			&lth1&gt = encabezado largo<br>
+			&ltp&gt = parrafo<br><hr>
+		</p>
+	<h2>TextEdit </h2>
+		<p>Preferences-> Format-> Plain text<br>
+			archivo.htm<br>
+			UTF-8 ENCODING<br><hr>
+		</p>
+	<h2>Atributos de los elementos</h2>
+		<p>&lta href="URL"&gtText&lt/a&gt -> Links<br>
+			&lta src="imagen.ext" width="111" heigth="111"&gt -> Imagen<br>
+			alt="text" -> Imagen (en lugar de la imagen)<br>
+			style="color:x" -> Texto<br>
+			lang="lenguaje-REG" ->Documento<br>
+			&lttitle="leyenda"&gt -> Texto (ventana emergente)<br>
+			*Comillas simples entre comillas dobles<br><hr>
+		</p>
+	<h2>Encabezados</h2>
+		<p>h-num; num= tamaño de la letra<br>
+			style="font-size:NNpx;"<br>
+			&lthr&gt -> Línea horizontal<br><hr>
+		</p>
+	<h2>Parrafo</h2>
+		<p>br -> Salto de linea<br>
+			&ltpre&gt -> Formato predefinido para el texto <br><hr>
+		</p>
+	<h2>Estilo</h2>
+		<p>tag &ltstyle="property:value;"&gt<br>
+			background-color: color<br>
+			color:color<br>
+			font-family:font<br>
+			font-size:111%<br>
+			text-align:orientation<br><hr>
+		</p>
+	<h2>Formato</h2>
+		<p>&ltb&gt -> Negritas<br>
+			&ltstrong&gt -> Importante<br>
+			&lti&gt -> Italica<br>
+			&ltem&gt -> Enfasis<br>
+			&ltmark&gt -> Subrayado<br>
+			&ltsmall&gt -> Pequeño<br>
+			&ltdel&gt -> Tachado<br>
+			&ltins&gt -> Rayado<br>
+			&ltsub&gt -> Subindice<br>
+			&ltsup&gt -> Superindice<br><hr>
+		</p>
+	<h2>Citas</h2>
+		<p>&ltq&gt -> Citas (Agrega comillas)<br>
+			&ltblockquote cite="www.web.com"&gt<br>
+			&ltabbr title="Name"&gt<br>
+			&ltaddress&gt -> Información del contacto<br>
+			&ltcite&gt -> Formato de cita al texto<br>
+			&ltbdo dir="rtl"&gt -> Voltea el texto<br><hr>
+		</p>
+	<h2>Comentario</h2>
+		<p>&lt!--comentario--&gt<br><hr>
+		</p>
+	<h2>Color</h2>
+		<p>&lth1 style="border:2px color;"&gt<br>
+			&lth1 style="background-color:rgb(nn,nn,nn, transparencia);"&gt<br>
+			rgb -> (r,g,b)<br>
+			hex -> #rrggbb<br>
+			hsl -> (hue, saturation%, lightness%)<br>
+			rgba -> (r,g,b,a)<br>
+			hsla -> (hue, saturation%, lightness%, a)<br><hr>
+		</p>
+	<h2>Links</h2>
+		<p>&lt a href="direccion.asp"&gtTexto&lt/a&gt -> Local<br>
+			&lta href="www.web.com" target="XXXX"&gtTexto&lt/a&gt<br>
+			XXXX:<br>
+			_blank -> Nueva Ventana<br>
+			_self -> Misma ventana <br>
+			_parent <br>
+			_top <br>
+			framename<br>
+			&lta href ...&gt &lt img ...&gt &lt/a&gt -> Imagen como link<br><hr>
+		</p>
+	<h2>Bookmark</h2>
+		<p>&lth2 id="C1"&gtChapter 1&lt/h2&gt&lt/p&gt<br>
+			&lta href="#C1"&gtJump to Chapter 1&lt/a&gt<br>
+			&lta href="html_demo.html#C1"&gtJump to Chapter 1&lt/a&gt<br><hr>
+		</p>
+	<h2>Imagenes</h2>
+		<p>&ltimg src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt -> Alineación con el texto<br>
+		<hr>
+		</p>
+	<h2>Map</h2>
+		<p>&ltimg src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt<br>
+			&ltmap name="workmap"&gt<br>
+			&ltarea shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt<br><hr>
+	<h2>Picture</h2>
+		</p> &ltpicture&gt<br>
+		&ltsource media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt<br>
+		&ltsource media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt<br>
+		&ltimg src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt<br>
+		&lt/picture&gt -> Diferent devices<br><hr>
+		</p>
+	<h2>Tablas</h2>
+		<p>&lttable style="width:nnn%"&gt&lt/p&gt<br>
+			&lttr&gt -> renglon<br>
+			&ltth&gt -> encabezado<br>
+			&lttd&gt -> celda<br>
+    		&ltth colspan="2"&gtCampo&lt/th&gt<br>
+    		&ltth rowspan="2"&gtCampo:&lt/th&gt<br>
+    		&ltcaption&gtTitulo de la tabla&lt/caption&gt<br><hr>
+    	</p>
+    <h2>Lista no ordenada</h2>
+    	<p>&ltul&gt<br>
+    		&ltli&gt -> Elemento<br>
+    		&ltul style="list-style-type:XXXX"&gt<br>
+    		XXXX:<br>
+    		disc, circle, square, none <br><hr>
+    	</p>
+    <h2>Lista ordenada</h2>
+    	<p>&ltol&gt<br>
+    		&ltli&gt -> Elemento<br>
+    		&ltol type="XXXX"&gt<br>
+    		XXXX:<br>
+    		1, A, a, I, i<br>
+    	</p>
+    <h2>Description List</h2>
+    	<p>&ltdl&gt
+  			&ltdt&gtCoffee&lt/dt&gt
+  	&ltdd&gt- black hot drink&lt/dd&gt&lt/p&gt
+</body>
+</html>
