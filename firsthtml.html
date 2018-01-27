@@ -7,12 +7,14 @@
 	<h1>Hyper Text Markup Language</h1><br><hr>
 	<h2>Elementos</h2>
 		<p>!DOCTYPE html = HTML5<br>
+			&lttag&gt<br>
 			&lthtml&gt = raiz<br>
 			&lthead&gt = meta information<br>
 			&lttitle&gt = titulo del documento<br>
 			&ltbody&gt = parte visible del documento<br>
 			&lth1&gt = encabezado largo<br>
-			&ltp&gt = parrafo<br><hr>
+			&ltp&gt = parrafo<br>
+			&lt/endtag&gt<br><hr>
 		</p>
 	<h2>TextEdit </h2>
 		<p>Preferences-> Format-> Plain text<br>
@@ -21,16 +23,15 @@
 		</p>
 	<h2>Atributos de los elementos</h2>
 		<p>&lta href="URL"&gtText&lt/a&gt -> Links<br>
-			&lta src="imagen.ext" width="111" heigth="111"&gt -> Imagen<br>
-			alt="text" -> Imagen (en lugar de la imagen)<br>
-			style="color:x" -> Texto<br>
-			lang="lenguaje-REG" ->Documento<br>
-			&lttitle="leyenda"&gt -> Texto (ventana emergente)<br>
+			&ltimg src="imagen.ext" alt="text" width="111" heigth="111"&gt -> Imagen<br>
+			&ltp style="color:XXXX"&gt<br>
+			&lthtml lang="en-US"&gt<br>
+			&ltp title="leyenda"&gt<br>
 			*Comillas simples entre comillas dobles<br><hr>
 		</p>
 	<h2>Encabezados</h2>
-		<p>h-num; num= tamaño de la letra<br>
-			style="font-size:NNpx;"<br>
+		<p>h-num; num= tamaño de la letra (1-6)<br>
+			&lth1 style="font-size:XXXXpx;"&gt<br>
 			&lthr&gt -> Línea horizontal<br><hr>
 		</p>
 	<h2>Parrafo</h2>
@@ -39,11 +40,11 @@
 		</p>
 	<h2>Estilo</h2>
 		<p>tag &ltstyle="property:value;"&gt<br>
-			background-color: color<br>
-			color:color<br>
-			font-family:font<br>
-			font-size:111%<br>
-			text-align:orientation<br><hr>
+			&ltbody style="background-color:XXXX;"&gt<br>
+			&lth1/p style="color:XXXX;"&gt<br>
+			&lth1/p style="font-family:XXXX;"&gt<br>
+			&lth1/p style="font-size:XXXX%;"&gt<br>
+			&lth1 style="text-align:XXXX;"&gt<br><hr>
 		</p>
 	<h2>Formato</h2>
 		<p>&ltb&gt -> Negritas<br>
@@ -59,8 +60,8 @@
 		</p>
 	<h2>Citas</h2>
 		<p>&ltq&gt -> Citas (Agrega comillas)<br>
-			&ltblockquote cite="www.web.com"&gt<br>
-			&ltabbr title="Name"&gt<br>
+			&ltblockquote cite="URL"&gt<br>
+			&ltabbr title="XXXX"&gt -> Descripción<br>
 			&ltaddress&gt -> Información del contacto<br>
 			&ltcite&gt -> Formato de cita al texto<br>
 			&ltbdo dir="rtl"&gt -> Voltea el texto<br><hr>
@@ -69,7 +70,9 @@
 		<p>&lt!--comentario--&gt<br><hr>
 		</p>
 	<h2>Color</h2>
-		<p>&lth1 style="border:2px color;"&gt<br>
+		<p>&lth1/p style="background-color:XXXX;"&gt<br>
+			&lth1/p style="color:XXXX;"&gt<br>
+			&lth1/p style="border:XXXXpx color;"&gt<br>
 			&lth1 style="background-color:rgb(nn,nn,nn, transparencia);"&gt<br>
 			rgb -> (r,g,b)<br>
 			hex -> #rrggbb<br>
@@ -79,7 +82,7 @@
 		</p>
 	<h2>Links</h2>
 		<p>&lt a href="direccion.asp"&gtTexto&lt/a&gt -> Local<br>
-			&lta href="www.web.com" target="XXXX"&gtTexto&lt/a&gt<br>
+			&lta href="URL" target="XXXX"&gtTexto&lt/a&gt<br>
 			XXXX:<br>
 			_blank -> Nueva Ventana<br>
 			_self -> Misma ventana <br>
@@ -95,26 +98,28 @@
 		</p>
 	<h2>Imagenes</h2>
 		<p>&ltimg src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt -> Alineación con el texto<br>
+		&ltbody style="background-image:url('imagen.jpg')"&gt
 		<hr>
 		</p>
 	<h2>Map</h2>
-		<p>&ltimg src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt<br>
+		<p>&ltimg src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt<br>
 			&ltmap name="workmap"&gt<br>
-			&ltarea shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt<br><hr>
+			&ltarea shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt<br>
+			&ltarea shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt<br><hr>
 	<h2>Picture</h2>
 		</p> &ltpicture&gt<br>
-		&ltsource media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt<br>
-		&ltsource media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt<br>
-		&ltimg src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt<br>
+		&ltsource media="(min-width: 650px)" srcset="img1.jpg"&gt<br>
+		&ltsource media="(min-width: 465px)" srcset="img2.jpg"&gt<br>
+		&ltimg src="img3.jpg" alt="XXXX" style="width:auto;"&gt<br>
 		&lt/picture&gt -> Diferent devices<br><hr>
 		</p>
 	<h2>Tablas</h2>
-		<p>&lttable style="width:nnn%"&gt&lt/p&gt<br>
+		<p>&lttable style="width:XXXX%"&gt<br>
 			&lttr&gt -> renglon<br>
 			&ltth&gt -> encabezado<br>
 			&lttd&gt -> celda<br>
-    		&ltth colspan="2"&gtCampo&lt/th&gt<br>
-    		&ltth rowspan="2"&gtCampo:&lt/th&gt<br>
+    		&ltth colspan="XXXX"&gtCampo&lt/th&gt<br>
+    		&ltth rowspan="XXXX"&gtCampo:&lt/th&gt<br>
     		&ltcaption&gtTitulo de la tabla&lt/caption&gt<br><hr>
     	</p>
     <h2>Lista no ordenada</h2>
@@ -129,11 +134,57 @@
     		&ltli&gt -> Elemento<br>
     		&ltol type="XXXX"&gt<br>
     		XXXX:<br>
-    		1, A, a, I, i<br>
+    		1, A, a, I, i<br><hr>
     	</p>
     <h2>Description List</h2>
-    	<p>&ltdl&gt
-  			&ltdt&gtCoffee&lt/dt&gt
-  	&ltdd&gt- black hot drink&lt/dd&gt&lt/p&gt
+    	<p>&ltdl&gt -> Tag<br>
+    		&ltdt&gt -> Primer nivel<br>
+    		&ltdd&gt -> Segundo nivel<br><hr>
+    	</p>
+    <h2>Blocks</h2>
+    	<p>&ltdiv&gt ->Container (style, class)<br>
+    		&ltspan&gt -> inline (style,class)<br><hr>
+    	</p>
+    <h2>Iframe</h2>
+    	<p>&ltiframe src="URL" height="200" width="300"&gt<br>
+    		&ltiframe src="demo.htm" style="border:none;"&gt<br>
+    		&ltiframe src="demo_iframe.htm" name="iframe_a"&gt<br>
+    		&lta href="URL" target="iframe_a"&gt<br><hr>
+    	</p>
+    <h2>File Paths</h2>
+    	<p>&ltimg src="XXXX"&gt<br>
+    		folder/file -> Localizado en folder <br>
+    		/folder/file -> root <br>
+    		../file -> level up<br><hr>
+    	</p>
+    <h2>Head</h2>
+    	<p>head, title, base, link, meta, script, style<br><hr>	
+    	</p>
+    <h2>Viewport</h2>
+    	<p>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt<br><hr>
+    	</p>
+    <h2>Base</h2>
+    	<p>&ltbase href="URL" target="_blank"&gt -> Lugar de busqueda por default<br><hr>
+    	</p>
+    <h2>Responsive</h2>
+    	<p>&ltimg src="img_girl.jpg" style="max-width:100%;height:auto;"&gt -> Tamaño original maximo<br>
+    		&lth1 style="font-size:10vw"&gt -> Texto ajustable <br><hr>
+    	</p>
+    <h2>Code</h2>
+    	<p>&ltcode&gt<br>
+    		&ltkbd&gt -> User input, browsers font <br>
+    		&ltsamp&gt -> Output, browsers font<br>
+    		&ltpre&gt &ltcode&gt -> Saltos de linea<br>
+    		&ltvar&gt -> Programming context<br></p>
+    <h2>Entities</h2>
+    	<p>& nbsp -> Espacio que no salta la linea<br>
+    	letra & #769 <br><hr>
+    	</p>
+    <h2>HTML5</h2>
+    	<p>&ltmeta charset="UTF-8"&gt ->Display adecuado<br><hr>
+    	</p>
+    <h2>URL</h2>
+    	<p>scheme://prefix.domain:port/path/filename
+    	</p>
 </body>
 </html>
