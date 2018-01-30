@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>CSS</title>
+</head>
+<body>
+	<h1>Cascading Style Sheets</h1><hr>
+	<h2>Elementos</h2>
+	<p>Selector(elemento HTML) y declaration block<br>
+		&ltstyle&gt<br>
+		h1 {color:XXX; font-size:XXXXpx; text-align:XXXX; background-color:XXXX; margin-right:XXXXpx} -> ESPACIOS<br>
+		&lt/style&gt<br>
+		/* Comentario */<hr>
+	</p>
+	<h2>Selectores</h2>
+	<p><b>ID</b><br>
+		"#" para elementos especificos<br>
+		#p1 {}<br><br>
+		<b>CLASS</b><br>
+		"." para una clase especifica<br>
+		.center {}<br>
+		&ltp class= "center large"&gt<br><hr>
+	</p>
+	<h2>Grouping</h2>
+	<p>"," para separar los elementos<br>
+		h1, h2, p {}<br><hr>
+	</p>
+	<h2>Insert CSS</h2>
+	<p><b>External Style Sheet</b> -> sin tags HTML<br>
+		&lthead&gt<br>
+		&ltlink rel="stylesheet" type="text/css" href="mystyle.css"&gt<br>
+		&lt/head&gt<br><br>
+		<b>Internal Style sheet</b><br>
+		&lthead&gt<br>
+		&ltstyle&gt<br>
+		body, p {...}<br>
+		&lt/style&gt<br>
+		&lt/head&gt<br><br>
+		<b>Inline Styles</b><br>
+		&lth1 style="color:XXXX;margin-left:XXXXpx;"&gt &lt/h1&gt<br><br>
+		<b>Cascading Order</b><br>
+		1. Inline Style<br>
+		2. External and Internal style sheets<br>
+		3. Browser default<br><hr>
+	</p>
+	<h2>Color</h2>
+	<p>&lt h1 style="border:XXXXpx solid XXXX;"&gt<br>
+		&lt h1 style="background-color:rgb(XX,XX,XX);"&gt -> rgb(0,255)<br><hr>
+	</p>
+	<h2>Backgrounds</h2>
+	<p>Propiedades: color, image, repeat, attachment, position.<br>
+		h1 {background-color: XXXX}<br>
+		h1 {background-image: url("image.gif")}<br>
+		h1 {background-repeat: repeat-x;} -> Horizontal; -y Vertical<br>
+		h1 {background-repeat:no-repeat;}<br>
+		h1 {background-position: right top;}<br>
+		h1 {background-attachment: fixed;}<br>
+		h1 {background: #ffffff url(image.gif) no-repeat right top;}<br><hr>
+	</p>
+	<h2>Border</h2>
+	<p>Styles: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden, mix<br>
+		p {border-style: XXXX;}<br>
+		Width: in, px, pt, cm, em, thin, medium, thick<br>
+		p {border-width: XXXXpx;}<br>
+		p {border-color: XXXX;}<br>
+		p {border-top-style:XXXX; border-right-style:XXXX; border-bottom-style:XXXX; border-left-style:XXXX;}<br><br>
+		<b>Shorthand</b><br>
+		p {border: 5px solid red;}<br>
+		p {border-left: ...}<br>
+		p {border-bottom: ...}<br>
+		p {border-radius: XXXXpx}<br><hr>
+	</p>
+	<h2>Margins</h2>
+	<p>Styles: -top, -right, -bottom, -left -> En ese orden<br>
+		Values: auto (center); length in px, pt, cm; length in %; inherit<br>
+		p {margin: 25px 50px 100px 125px}<br><hr>
+	</p>
+	<h2>Padding</h2>
+	<p>Styles: -top, -right, -bottom, -left -> En ese orden<br>
+		Values: length in px, pt, cm; length in %; inherit -> No negativos <br>
+		p {padding: 20px 100px 30px 75px;}<br>
+		p {width: XXXXpx; padding:XXXXpx; box-sizing: border-box;}<br><hr>
+	</p>
+	<h2>Height & Width</h2>
+	<p> p {heigth:XXXpx; width: XXXX%}<br>
+		max-width, max-height<br><hr>
+	</p>
+
+
+
+
+
+
+
+
+
+
