@@ -85,10 +85,208 @@
 	<p> p {heigth:XXXpx; width: XXXX%}<br>
 		max-width, max-height<br><hr>
 	</p>
-
-
-
-
+	<h2>Box Model</h2>
+	<p>Content->Padding->Border->Margin
+		div {width:XXXXpx; padding:XXXXpx; border:XXXXpx XXXX; margin: XXXX;}<br>
+		Total element width: Width + L-R Paddings + L-R Borders + L-R Margins<br>
+		Total element height: Heigth + T-B Padding + T-B Borders + T-B Margins<br><hr>
+	</p>
+	<h2>Outline</h2>
+	<p>Outline==Borders<br>
+		Properties: Style, Color, Width, Offset<br>
+		p {outline-style: XXXX;}<br>
+		p {outline-color: XXXX;}<br>
+		outline-color: invert; ->Visible<br>
+		outline-width: thin, medium, thick, specific size <br>
+		outline: thick ridge pink;}<br>
+		outline-offset: XXXXpx;<br><hr>
+	</p>
+	<h2>Text</h2>
+	<p> Color, text-align <br>
+		text-decoration: overline, line-through, underline, none; <br>
+		text-transform: uppercase, lowercase, capitalize<br>
+		text-indent: XXXXpx;<br>
+		letter-spacing: + - XXXXpx <br>
+		line-height: XXXX <br>
+		direction: rtl <br>
+		word-spacing: + - XXXXpx <br>
+		text-shadow: HSpx, VSpx, color; <br><hr>
+	</p>
+	<h2>Fonts</h2>
+	<p>Generic family & font family<br>
+		Generic: Serif, <u>sans-serif</u>, monospace<br>
+		font-family: "Times New Roman", Times, serif;<br>
+		font-style: normal, italic, oblique;<br>
+		font-size: XXXXpx;<br>
+		font-size: XXXXem;<br>
+		font-size: XXXX%;<br>
+		font-weight: normal, bold<br>
+		font-variant: normal, small-caps;<br><hr>
+	</p>
+	<h2>Icons</h2>
+	<p><b>Font Awesome</b><br><br>
+		&lthead&gt<br>
+		&ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt<br>
+		&lt/head&gt<br>
+		&lti class="fa fa-cloud"&gt&lt/i&gt<br><br>
+		<b>Bootstrap</b><br><br>
+		&lthead&gt<br>
+		&ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt<br>
+		&lt/head&gt<br>
+		&lti class="glyphicon glyphicon-cloud"&gt&lt/i&gt<br><br>
+		<b>Google</b><br><br>
+		&lthead&gt<br>
+		&ltlink rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt<br>
+		&lt/head&gt<br>
+		&lti class="material-icons"&gtcloud&lt/i&gt<br><hr>
+	</p>
+	<h2>Links</h2>
+	<p>States: a:link, a:visited, a:hover, a:active -> En ese orden<br>
+		text-decoration: none, underline<br>
+		background-color: XXXX<br><br>
+		<b>Botones</b><br><br>
+		a:link, a:visited {<br>
+    		background-color: #f44336;<br>
+    		color: white;<br>
+    		padding: 14px 25px;<br>
+    		text-align: center; <br>
+    		text-decoration: none;<br>
+    		display: inline-block;<br>
+		}<br>
+		a:hover, a:active {<br>
+   			background-color: red;<br>
+		}<br><hr>
+	</p>
+	<h2>Listas</h2>
+	<p>list-style-type: circle, square, upper-roman, lower-alpha<br>
+		list-style-image: url('sqpurple.gif');<br>
+		list-style-position: outside; -> bullets fuera de la lista<br>
+		list-style-position: inside -> bullets dentro de la lista<br>
+		list-style-type: none -> Retira formato<br>
+    	margin: 0 -> Retira formato<br>
+    	padding: 0 -> Retira formato<br>
+    	list-style: square inside url("sqpurple.gif"); -> Type, position, image<br><hr>
+	</p>
+	<h2>Tablas</h2>
+	<p>border-collapse: collapse; -> 1 solo borde<br>
+		border: XXXXpx solid XXXX -> Only for table, outside border<br>
+		width: XXXX%<br>
+		height: XXXXpx<br>
+		text-align: XXXX<br>
+		vertical-align: top, bottom, center<br>
+		padding: XXXXpx<br>
+		border-bottom: XXXXpx solid #XXXX -> Divisor horizontal <br>
+		tr:hover {...} -> Resalta al pasar el mouse <br>
+		tr:nth-child(even / odd) {...} -> Uno si, uno no.<br>
+		th { background-color: #4CAF50; color: white; } ->Encabezado de color<br>
+		&ltdiv style="overflow-x:auto;"&gt ->Tabla autoajustable<br>
+		&lttable&gt&lt/table&gt<br>
+		&lt/div&gt<br><hr>
+	</p>
+	<h2>Display</h2>
+	<p>Block or inline<br>
+		li {display: inline / block;} -> Block rompe el renglón <br>
+		display: none; -> Hides an element<br>
+		visibility:hidden; ->Hides an element<br>
+		max-width -> Evita problemas de visualización del contenido<br><hr>
+	</p>
+	<h2>Position</h2>
+	<p>Values: static, relative, fixed, absolute, sticky<br>
+		div.sticky {<br>
+    	position: -webkit-sticky; /* Safari */<br>
+    	position: sticky;<br>
+    	top: 0;<br>
+    	z-index: + - XXXX; Mayor se muestra antes<br><hr>
+	</p>
+	<h2>Overflow</h2>
+	<p>Values: visible, hidden (elimina lo fuera de linea), scroll, auto<br>
+		div {overflow:visible;}<br>
+		Auto == Scroll. Auto agrega barras solo cuando es necesario<br>
+		overflow-x -> L-R edges of content<br>
+		overflow-y -> T-B edges of content<br><hr>
+	</p>
+	<h2>Float</h2>
+	<p>Values: Left, right, none, inherit -> Imagenes con texto<br><br>
+	<b>Clear</b><br>
+		Values: None, left, right, both, inherit<br>
+		div {clear: left;}<br>
+		.clearfix {overflow: auto;}<br> -> Si no cubre la imagen<br><br>
+		.clearfix::after {content: ""; clear: both; display: table;}<br><hr>
+	</p>
+	<h2>In-line block</h2>
+	<p> .floating-box {display: inline-block; width: 150px; height: 75px; margin: 10px; border: 3px solid #73AD21;}<br><hr>
+	</p>
+	<h2>Align</h2>
+	<p>margin:auto, center, ;<br>
+		img {display: block; margin-left: auto; margin-right: auto; width: 40%;} -> Centrado de imagen<br>
+		float:right;<br><hr>
+	</p>
+	<h2>Combinators</h2>
+	<p>Values: Descendant selector (space),child selector(>), adjacent sibling selector (+), general sibling selector(-)<br>
+		div p {...} -> Aplica a todos los p dentro de div<br>
+		div > p {...} -> Aplica a hijos directos de div<br>
+		div + p {...} -> Aplica a los siguientes p fuera de div<br>
+		div - p {...} -> Aplica a p hermanos, aunque esten separados<br><hr>
+	</p>
+	<h2>Pseudo-Classes</h2>
+	<p>selector:pseudo-class {property:value;}<br>
+		a.highlight:hover {color: #ff0000;}<br>
+		div:hover {background-color: blue;}<br>
+		p {display: none; background-color: yellow; padding: 20px;}<br>
+		div:hover p {display: block;}<br>
+		:lang -> quotation marks<br><hr>
+	</p>
+	<h2>Pseudo-elements</h2>
+	<p>selector::pseudo-element {property:value;}<br>
+		::first-line -> Style to the first line of a text<br>
+		Values: Font, color, background, word-spacing, letter-spacing <br>
+		::first-letter -> Style to the first letter<br>
+		::before {content: ...} ->Añadir contenido antes del texto<br>
+		::after {content: ...} -> Añadir contenido después del texto<br>
+		::selection {color, background} -> Cuando el usuario selecciona contenido<br><hr>
+	</p>
+	<h2>Opacity</h2>
+	<p>img {opacity: 0.5;filter: alpha(opacity=50);}<br>
+		img:hover {opacity: 1.0;filter: alpha(opacity=100);}-> Cambia cuando pasa el cursor<br><hr>
+	</p>
+	<h2>Navigation Bar</h2>
+	<p>List of links: ul & li -> Sin bullets ni margenes <br>
+		li a {display: block; width: 60px;} ->Vertical Navigation Bar<br>
+		li a:hover {...} ->Al pasar el mouse<br>
+		.active {background-color: #4CAF50;color: white;}<br>
+		Horizontal: inline<br>
+		li {border-right: 1px solid #bbb;} -> Añadir línea a los bordes<br>
+		ul {position: fixed;top: 0;width: 100%;} -> Barra de navegación fija<br><hr>
+	</p>
+	<h2>Dropdown</h2>
+	<p>.dropbtn {...}<br>
+		.dropdown {...}<br>
+		.dropdown-content {right: 0;}<br>
+		.dropdown:hover<br><hr>
+	</p>
+	<h2>Tooltip</h2>
+	<p>.tooltip {}<br>
+		.tooltip .tooltiptext {}<br>
+		.tooltip:hover {}<br>
+		.tooltip .tooltiptext {top: -5px;left: 105%; } ->A la derecha<br><hr>
+	</p>
+	<h2>Attr</h2>
+	<p>a[target] {background-color: yellow;} ->Atributo específico<br>
+		a[target="_blank"] { background-color: yellow;} -> Atributo y valor específico<br>
+		[title~="flower"] {border: 5px solid yellow;} -> Las que contengan "X" palabras<br>
+		[class|="top"] {background: yellow;} ->Inicia con la palabra X-<br>
+		[class^="top"] {background: yellow;} ->Inicia con la palabra X<br>
+		[class$="test"] {background: yellow;} -> Termina con lal paabra X<br>
+		[class*="te"] {background: yellow;} -> Contiene X<br>
+		input[type=text] {width: 150px;display: block;margin-bottom: 10px;background-color: yellow;}<br>
+		input[type=button] {width: 120px;margin-left: 35px;display: block;}<br>
+		&ltform name="input" action="" method="get"&gt<br>
+  		Firstname:&ltinput type="text" name="Name" value="Peter" size="20"&gt<br>
+  		Lastname:&ltinput type="text" name="Name" value="Griffin" size="20"&gt<br>
+  		&ltinput type="button" value="Example Button"&gt<br>
+		&lt/form&gt<br><hr>
+	</p>
+		
 
 
 
