@@ -10,7 +10,7 @@
 	    list-style-type: none;
 	    margin:0;
 	    padding:0;
-	    width:17%;
+	    width:10%;
 	    background-color: rgba(0,0,0,0.70);
 	    position:fixed;
 	    height:572px;
@@ -18,7 +18,7 @@
 	}
 
 	li a, .dropbtn {
-	    display: inline-block;
+	    display: block;
 	    color: white;
 	    text-align: center;
 	    padding: 14px 16px;
@@ -35,8 +35,8 @@
 	}
 	.if {
 		height:570px;
-		width:83%;
-		margin-left:17%;
+		width:90%;
+		margin-left:10%;
 		position:relative;
 	}
 	.dropdown-content {
